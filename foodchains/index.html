@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-test</title>
+    <link rel="stylesheet" href="index.css" type="text/css" media="all">
+	<script src="index.js"></script>
+</head>
+<body>
+<div class="contentarea">
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Take photo</button>
+    </div>
+    <canvas id="canvas"> </canvas>
+    <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box." />
+    </div>
+    <h2>Describe your Photo!</h2>
+    <div id="btn-group"> 
+        <h3>Does your Photo contain a</h3>
+        <button onclick="identifyButton('plant')">Plant</button>
+        <button onclick="identifyButton('animal')">Animal</button>
+      </div> 
+</div>
+</body>
+</html>
